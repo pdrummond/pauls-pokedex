@@ -49,13 +49,13 @@ working correctly:
 
 ### Todo
 
-- [ ] Add more pokemon details - only name, national number and image supported
+- [ ] Add more Pokemon details - only name, national number and image supported
       so far.
 - [ ] Improve styling - only basic styling included currently to demo use of
       styled-components.
 - [ ] Add production build using Docker (currently only works in dev mode)
 - [ ] Add Authenticaion
-- [ ] Better seed data to avoid duplicate pokemon / missing images
+- [ ] Use better seed data to avoid duplicate pokemon / missing images
 - [ ] Validation (for example, preventing duplicate national numbers)
 - [ ] Add backend integration tests
 - [ ] Add backend unit tests
@@ -63,4 +63,4 @@ working correctly:
       docker-compose)
 - [ ] Improved error handling (for now just using alert and console logging)
 - [ ] Reduce data deps in Cypress tests - current easy for tests to start
-      failing if the entire run doesn't complete for whatever reason.
+      failing if the entire run doesn't complete.
