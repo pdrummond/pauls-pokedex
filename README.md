@@ -31,6 +31,7 @@ To run Cypress tests:
 - Open another terminal and cd to root folder
 - `cd frontend`
 - `yarn cypress:open`
+- When the Cypress browser opens click "Run all specs".
 
 This will launch a set of end-to-end tests that automatically test the app is
 working correctly:
