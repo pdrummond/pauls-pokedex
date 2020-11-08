@@ -1,20 +1,30 @@
 ## Paul's Pokedex
 
-To run locally:
+To run locally, first set-up the REST server:
 
 - clone repo and cd to root folder
 - `cd backend`
+- `python3 -m venv env`
+- `source env/bin/activate`
+- `pip install -r requirements.txt`
+- `python manage.py migrate`
 - `python manage.py seed`
 - `python manage.py runserver`
-- Open another terminal at root folder
+
+While server is running, open another terminal at root folder to start-up the
+frontend:
+
 - `cd frontend`
 - `yarn`
 - `yarn start`
 
-App should automatically open at `http://localhost:3000` and show first page of
-pokedex:
+The Pokedex app should automatically open at `http://localhost:3000` and look
+like this:
 
 ![App Screenshot](./docs/images/app-screenshot.png)
+
+**_NOTE: If you don't see this screen, make sure you ran the `seed` step above
+to populate the pokedex_**
 
 To run Cypress tests:
 
