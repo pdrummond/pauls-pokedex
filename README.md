@@ -2,21 +2,25 @@
 
 To run locally, first set-up the REST server:
 
-- clone repo and cd to root folder
-- `cd backend`
-- `python3 -m venv env`
-- `source env/bin/activate`
-- `pip install -r requirements.txt`
-- `python manage.py migrate`
-- `python manage.py seed`
-- `python manage.py runserver`
+1. clone repo and cd to root folder
+1. `cd backend`
+1. `python3 -m venv env`
+1. `source env/bin/activate`
+1. `pip install -r requirements.txt`
+1. `python manage.py migrate`
+1. `python manage.py seed`
+1. `python manage.py runserver`
+
+_NOTE: Docker support would be added next to support production build and make
+it much easier to run locally as well, removing the need for all these steps to
+try out the app._
 
 While server is running, open another terminal at root folder to start-up the
 frontend:
 
-- `cd frontend`
-- `yarn`
-- `yarn start`
+1. `cd frontend`
+1. `yarn`
+1. `yarn start`
 
 The Pokedex app should automatically open at `http://localhost:3000` and look
 like this:
@@ -46,7 +50,8 @@ working correctly:
 - [x] Full support for **Search** and **Pagination**
 - [x] Client state management using built-in React
 - [x] Frontend **end to end tests** using Cypress
-- [x] React query for intelligent **data fetching and caching**
+- [x] Utilises [react-query](https://github.com/tannerlinsley/react-query) for
+      intelligent **data fetching and caching**
 
 ### Todo
 
